@@ -1,0 +1,61 @@
+body,html{
+    padding:0;
+    margin:0;
+}
+
+header{
+    height:60px;
+    position:fixed;
+    background-color: crimson;
+    width:100%;
+}
+
+.logo-wrapper{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.logo{
+    line-height: 60px;
+    padding:0 16px;
+    color:white;
+}
+nav{
+    position:absolute;
+    right:0;
+    top:0;
+}
+nav>ul{
+    display:flex;
+    list-style: none;
+    margin:0;
+}
+
+nav>ul>li{
+    padding:0 16px;
+    line-height: 60px;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color:white;
+}
+nav>ul>li>a:hover{
+    opacity:0.8;
+    cursor:pointer;
+}
+
+#root{
+    padding-top:60px;
+}
+
+.service{
+    padding:16px;
+    box-sizing: border-box;
+    margin: 8px;
+    box-shadow: 3px 3px 3px 3px #999;
+}
+.service>h1{
+    color:crimson;
+}
