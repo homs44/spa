@@ -93,6 +93,14 @@ function init(){
     
     //현재 브라우저의 url을 가지고와서 route(path);
     // console.log(location.href);
+    
+    // 이 부분에 오류가 있습니다. 
+    // 만약 페이지 경로가 service/hosting 일 경우
+    // http://localhost:3000/service/hosting에서 
+    // 원하는 것은 service/hosting이지만 service만 가져오기 때문에
+    // 화면 출력이 이상할 수 있습니다.
+    // 수정 해보세요
+    // split, slice, join 등의 함수를 활용해보세요
     var path = location.href.split('/')[3];
 
     router('/'+path);
